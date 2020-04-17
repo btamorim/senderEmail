@@ -3,7 +3,7 @@ from email.mime.text import MIMEText
 import smtplib, ssl
 from email.header import Header
 
-def enviarMail(server_smtp, port, sender_mail, pwd, mail,  assunto ):
+def enviarMail(server_smtp, port, sender_mail, pwd, mail,  assunto, nome, local ):
     message = MIMEMultipart()
     message['Content-Type'] = 'text/html; charset=utf-8'
     message["From"] = sender_mail
