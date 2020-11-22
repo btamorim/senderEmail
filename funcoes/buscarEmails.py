@@ -3,9 +3,9 @@ import configparser
 
 config = configparser.ConfigParser()
 config.read("config.ini")
-dns=config.get("BD", "dns")
-user=config.get("BD", "user")
-pwd=config.get("BD", "pwd")
+dns=config.get('BD', "dns")
+user=config.get('BD', "user")
+pwd=config.get('BD', "pwd")
 db_pool = cx_Oracle.SessionPool(user, pwd, dns, min = 1, max = 3, increment = 1, threaded = True, encoding="UTF-8",nencoding='UTF-8')
 
 def buscaEmailSender(nrlote):
