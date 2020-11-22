@@ -1,0 +1,3 @@
+py3-validate-email
+pyopenssl
+PySocks==1.6.8
